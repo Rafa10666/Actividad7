@@ -12,9 +12,9 @@
     <fieldset>
         <legend>Información Personal</legend>
         <label for="nombre">Nombre completo:</label>
-        <input type="text" placeholder="Ej: Ana Lopez" name="nombre"><br><br>
+        <input type="text" placeholder="Ej: Ana Lopez" name="nombre" required="true"><br><br>
         <label for="email">Correo Electrónico:</label>
-        <input type="email" placeholder="Ej: juanpepe@hmail.com" name="email"><br><br>
+        <input type="email" placeholder="Ej: juanpepe@gmail.com" name="email" required="true"><br>
     </fieldset>
     <fieldset>
         <legend>Reservas</legend>
@@ -22,9 +22,25 @@
         <input type="date" name="entra"><br><br>
         <label for="sali">Fecha de Salida:</label>
         <input type="date" name="sali"><br><br>
+        <p>Numero de huespedes:</p>
+        <label for="adu">Adultos:</label>
+        <input type="number" name="adu" max="10" min="1"><br><br>
+        <label for="nin">Niños:</label>
+        <input type="number" name="nin" max="10" min="1"><br>
+        <p>Tipo de habitación:</p>
+        <label for="hab">Estandar</label>
+        <input type="radio" name="hab"><br>
+        <label for="hab">Superior</label>
+        <input type="radio" name="hab"><br>
+        <label for="hab">Suite</label>
+        <input type="radio" name="hab"><br>
+        <label for="ser">Servicios adicionales:</label><br>
+        <input type="checkbox" name="ser">Desayuno incluido<br>
+        <input type="checkbox" name="ser">Translado al aeropuerto<br>
+        <input type="checkbox" name="ser">Cama suplematoria<br>
     </fieldset>
     <fieldset>
-        <legend>Informacion Adicional</legend>
+        <legend>Peticiones especiales</legend>
         <label for="como">¿Como nos conocio?</label><br>
         <input type="radio" name="como">Redes Sociales<br>
         <input type="radio" name="como">Recomendacion de un amigo<br>
